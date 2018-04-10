@@ -8,7 +8,7 @@ include_directories(
 	${SAMPSDK_INCLUDE_DIR}
 )
 
-add_samp_plugin(uuid
+add_samp_plugin(pawn-uuid
 	${SAMPSDK_DIR}/amxplugin.cpp
 	${SAMPSDK_DIR}/amxplugin2.cpp
 	${SAMPSDK_DIR}/amx/getch.c
@@ -29,3 +29,5 @@ add_samp_plugin(uuid
 	natives.hpp
 	plugin.def
 )
+
+target_link_libraries(pawn-uuid uuid)

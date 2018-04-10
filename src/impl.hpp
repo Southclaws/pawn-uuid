@@ -7,13 +7,14 @@ is for declaring implementation functions for the plugin's core functionality.
 
 #include <string>
 
-#include <crossguid/guid.hpp>
+#include "guid.hpp"
 
 #ifndef uuid_IMPL_H
 #define uuid_IMPL_H
 
-namespace Impl {
-	std::string UUID();
+namespace Impl
+{
+std::string UUID();
 };
 
 #endif

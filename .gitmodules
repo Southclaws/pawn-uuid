@@ -7,6 +7,3 @@
 [submodule "src/plugin-natives"]
 	path = src/plugin-natives
 	url = https://github.com/Y-Less/plugin-natives
-[submodule "lib/crossguid"]
-	path = lib/crossguid
-	url = https://github.com/graeme-hill/crossguid

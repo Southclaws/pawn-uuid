@@ -11,6 +11,7 @@ log-core by maddinat0r.
 
 #include "impl.hpp"
 
-std::string Impl::UUID() {
+std::string Impl::UUID()
+{
 	return xg::newGuid().str();
 }

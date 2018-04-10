@@ -19,6 +19,8 @@ add_samp_plugin(uuid
 	plugin-natives/Internal/NativeCast.hpp
 	plugin-natives/Internal/NativeFuncImpl.hpp
 	plugin-natives/Internal/NativeHookImpl.hpp
+	guid.hpp
+	guid.cpp
 	common.hpp
 	main.cpp
 	impl.cpp

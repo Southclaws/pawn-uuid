@@ -58,6 +58,14 @@ Include in your code and begin using the library:
 #include <uuid>
 ```
 
+And add to your runtime configuration:
+
+```json
+{
+  "plugins": ["Southclaws/pawn-uuid"]
+}
+```
+
 ## Usage
 
 There's only one function and one constant, the following example should be

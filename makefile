@@ -16,8 +16,12 @@ test-windows:
 	cd test && sampctl server run
 
 test-linux:
-	sampctl package build
-	cd test && sampctl server run
+	docker build -t southclaws/uuid-build .
+	docker run --entrypoint=make southclaws/uuid-build test-linux-inside
+
+test-linux-inside:
+	./sampctl package build
+	cd test && ../sampctl server run
 
 # -
 # Build (Linux)

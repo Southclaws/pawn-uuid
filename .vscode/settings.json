@@ -16,6 +16,7 @@
         "locale": "cpp",
         "filesystem": "cpp",
         "xstring": "cpp",
-        "system_error": "cpp"
+        "system_error": "cpp",
+        "memory": "cpp"
     }
 }

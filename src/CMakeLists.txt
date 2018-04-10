@@ -29,5 +29,3 @@ add_samp_plugin(uuid
 	natives.hpp
 	plugin.def
 )
-
-target_link_libraries(uuid crossguid)

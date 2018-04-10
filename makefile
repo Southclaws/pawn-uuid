@@ -20,8 +20,8 @@ test-linux:
 	docker run --entrypoint=make southclaws/uuid-build test-linux-inside
 
 test-linux-inside:
-	./sampctl package build
-	cd test && ../sampctl server run
+	sampctl package build
+	cd test && sampctl server run
 
 # -
 # Build (Linux)

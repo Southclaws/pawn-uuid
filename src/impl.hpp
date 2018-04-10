@@ -12,8 +12,7 @@ is for declaring implementation functions for the plugin's core functionality.
 #ifndef uuid_IMPL_H
 #define uuid_IMPL_H
 
-namespace Impl
-{
+namespace Impl {
 std::string UUID();
 };
 

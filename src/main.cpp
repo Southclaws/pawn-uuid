@@ -22,7 +22,7 @@ PLUGIN_EXPORT unsigned int PLUGIN_CALL Supports()
     return SUPPORTS_VERSION | SUPPORTS_AMX_NATIVES;
 }
 
-PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData)
+PLUGIN_EXPORT bool PLUGIN_CALL Load(void** ppData)
 {
     pAMXFunctions = ppData[PLUGIN_DATA_AMX_EXPORTS];
     logprintf = (logprintf_t)ppData[PLUGIN_DATA_LOGPRINTF];
@@ -33,9 +33,9 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData)
 //    {"UUID", Natives::UUID},
 //    {NULL, NULL}};
 
-PLUGIN_EXPORT int PLUGIN_CALL AmxLoad(AMX *amx)
+PLUGIN_EXPORT int PLUGIN_CALL AmxLoad(AMX* amx)
 {
-	// return amx_Register(amx, native_list, -1);
+    // return amx_Register(amx, native_list, -1);
     return pawn_natives::AmxLoad(amx);
 }
 

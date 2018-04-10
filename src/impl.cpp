@@ -15,5 +15,5 @@ log-core by maddinat0r.
 
 std::string Impl::UUID()
 {
-	return xg::newGuid().str();
+    return xg::newGuid().str();
 }

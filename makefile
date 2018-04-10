@@ -11,7 +11,7 @@ test-setup:
 # -
 
 test-windows:
-	cp test/plugins/Debug/uuid.dll test/plugins/uuid.dll
+	-cp test/plugins/Debug/uuid.dll test/plugins/uuid.dll
 	sampctl package build
 	cd test && sampctl server run
 

@@ -13,7 +13,7 @@ The "main" source file with most of the boilerplate code. Includes the
 
 #include "common.hpp"
 #include "natives.hpp"
-#include "plugin-natives/NativesMain.hpp" // must be included last
+//#include "plugin-natives/NativesMain.hpp" // must be included last
 
 logprintf_t logprintf;
 
@@ -29,14 +29,14 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void** ppData)
     return true;
 }
 
-//extern "C" const AMX_NATIVE_INFO native_list[] = {
-//    {"UUID", Natives::UUID},
-//    {NULL, NULL}};
+extern "C" const AMX_NATIVE_INFO native_list[] = {
+    {"UUID", Natives::UUID},
+    {NULL, NULL}};
 
 PLUGIN_EXPORT int PLUGIN_CALL AmxLoad(AMX* amx)
 {
-    // return amx_Register(amx, native_list, -1);
-    return pawn_natives::AmxLoad(amx);
+    return amx_Register(amx, native_list, -1);
+    //return pawn_natives::AmxLoad(amx);
 }
 
 PLUGIN_EXPORT int PLUGIN_CALL Unload()

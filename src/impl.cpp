@@ -9,8 +9,6 @@ production debug logging, it's best to use a dedicated logging library such as
 log-core by maddinat0r.
 */
 
-#include "guid.hpp"
-
 #include "impl.hpp"
 
 std::string Impl::UUID()

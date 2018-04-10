@@ -30,4 +30,9 @@ add_samp_plugin(pawn-uuid
 	plugin.def
 )
 
+if(UNIX)
 target_link_libraries(pawn-uuid uuid)
+endif()
+# libuuid name is "uuid" so our project is named "pawn-uuid" and the line below
+# renames the output back to "uuid.so" or "uuid.dll"
+set_target_properties(pawn-uuid PROPERTIES OUTPUT_NAME "uuid")

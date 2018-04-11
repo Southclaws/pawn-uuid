@@ -1,5 +1,7 @@
 # pawn-uuid
 
+[![sampctl](https://shields.southcla.ws/badge/sampctl-pawn--uuid-2f2f2f.svg?style=for-the-badge)](https://github.com/Southclaws/pawn-uuid)
+
 uuid provides a simple UUID version 4 generator function.
 
 What's a UUID? A UUID (Universal Unique Identifier) is a standardised
@@ -45,6 +47,8 @@ especially if you're creating new entities on every server restart/multiple
 times a day. It's best to be safe when trying to generate unique identifiers.
 
 ## Installation
+
+[Source and Binaries on GitHub](https://github.com/Southclaws/pawn-uuid)
 
 Simply install to your project:
 

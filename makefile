@@ -28,9 +28,11 @@ test-linux-inside:
 # -
 
 build-linux:
-	rm -rf build
+	-rm -rf build
+	-mkdir build
 	docker build -t southclaws/uuid-build .
 	docker run -v $(shell pwd)/test/plugins:/root/test/plugins southclaws/uuid-build
 
 build-inside:
+	-mkdir build
 	cd build && cmake .. && make

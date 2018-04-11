@@ -99,5 +99,5 @@ actually on a Linux machine, just run the Windows makefile command above and
 it'll still run fine on Linux!
 
 ```bash
-make test-debian
+make test-linux
 ```

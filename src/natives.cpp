@@ -17,9 +17,9 @@ The code here acts as the translation between AMX data types and native types.
 //    return 0;
 //}
 
- cell Natives::UUID(AMX* amx, cell* params)
- {
-     auto uuid = Impl::UUID();
-     amx_SetCppString(amx, params[1], uuid, params[2]);
-     return 0;
- }
+cell Natives::UUID(AMX* amx, cell* params)
+{
+    auto uuid = Impl::UUID();
+    amx_SetCppString(amx, params[1], uuid, params[2]);
+    return 0;
+}

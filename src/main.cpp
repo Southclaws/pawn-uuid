@@ -30,8 +30,9 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void** ppData)
 }
 
 extern "C" const AMX_NATIVE_INFO native_list[] = {
-    {"UUID", Natives::UUID},
-    {NULL, NULL}};
+    { "UUID", Natives::UUID },
+    { NULL, NULL }
+};
 
 PLUGIN_EXPORT int PLUGIN_CALL AmxLoad(AMX* amx)
 {
@@ -44,7 +45,7 @@ PLUGIN_EXPORT int PLUGIN_CALL Unload()
     return 1;
 }
 
-PLUGIN_EXPORT int PLUGIN_CALL AmxUnload()
+PLUGIN_EXPORT int PLUGIN_CALL AmxUnload(AMX* amx)
 {
     return 1;
 }

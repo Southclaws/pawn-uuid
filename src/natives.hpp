@@ -13,9 +13,6 @@ Contains all the `PAWN_NATIVE_DECL` for native function declarations.
 
 #include "common.hpp"
 #include "impl.hpp"
-//#include "plugin-natives/NativeFunc.hpp" // must be included last
-
-//PAWN_NATIVE_DECL(uuid, UUID, bool(char*))
 
 namespace Natives {
 cell UUID(AMX* amx, cell* params);

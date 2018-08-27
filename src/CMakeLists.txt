@@ -12,13 +12,6 @@ add_samp_plugin(pawn-uuid
 	${SAMPSDK_DIR}/amxplugin.cpp
 	${SAMPSDK_DIR}/amxplugin2.cpp
 	${SAMPSDK_DIR}/amx/getch.c
-	plugin-natives/NativeFunc.hpp
-	plugin-natives/NativeHook.hpp
-	plugin-natives/NativeImport.hpp
-	plugin-natives/NativesMain.hpp
-	plugin-natives/Internal/NativeCast.hpp
-	plugin-natives/Internal/NativeFuncImpl.hpp
-	plugin-natives/Internal/NativeHookImpl.hpp
 	guid.hpp
 	guid.cpp
 	common.hpp

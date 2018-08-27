@@ -8,14 +8,6 @@ The code here acts as the translation between AMX data types and native types.
 */
 
 #include "natives.hpp"
-//#include "plugin-natives/NativeFunc.hpp"
-
-//PAWN_NATIVE_DEFN(uuid, UUID, bool(char* result))
-//{
-//    auto uuid = Impl::UUID();
-//    strncpy(result, uuid.c_str(), 37);
-//    return 0;
-//}
 
 cell Natives::UUID(AMX* amx, cell* params)
 {
